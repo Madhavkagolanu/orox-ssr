@@ -278,10 +278,16 @@ export default function Navbar() {
 
                 {/* Secondary Links */}
                 <div style={{ marginTop: "2rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
-                  {["Check Authenticity (IMEI)", "Warranty Information"].map(link => (
+                  {[
+                    { label: "Warranty & Care", path: "/warranty" },
+                    { label: "Handover & Replacements", path: "/returns" },
+                  ].map((link) => (
                     <button
-                      key={link}
-                      onClick={() => window.open('https://google.com', '_blank')}
+                      key={link.label}
+                      onClick={() => {
+                        setSidebarOpen(false);
+                        router.push(link.path);
+                      }}
                       style={{
                         background: "none",
                         border: "none",
@@ -292,13 +298,13 @@ export default function Navbar() {
                         color: "#666666",
                         fontWeight: 300,
                         textTransform: "uppercase",
-                        letterSpacing: "0.1em",
-                        transition: "opacity 0.3s ease"
+                        letterSpacing: "0.15em",
+                        transition: "opacity 0.3s ease",
                       }}
-                      onMouseEnter={e => (e.currentTarget.style.opacity = "0.5")}
-                      onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
+                      onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.5")}
+                      onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
                     >
-                      {link}
+                      {link.label}
                     </button>
                   ))}
                 </div>

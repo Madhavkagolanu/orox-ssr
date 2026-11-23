@@ -9,7 +9,7 @@ const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
-    topic: "Custom Device Inquiry",
+    topic: "Bespoke Commission",
     message: "",
   });
   
@@ -17,10 +17,10 @@ const ContactPage: React.FC = () => {
   const [errorMsg, setErrorMsg] = useState("");
 
   const topics = [
-    "Custom Device Inquiry",
-    "Authentication (IMEI)",
-    "Warranty Claims",
-    "General Inquiry"
+    "Bespoke Commission",
+    "Order & Dispatch",
+    "Defect / Replacement",
+    "General Concierge"
   ];
 
   const handleChange = (
@@ -55,7 +55,7 @@ const ContactPage: React.FC = () => {
       setFormData({
         fullName: "",
         email: "",
-        topic: "Custom Device Inquiry",
+        topic: "Bespoke Commission",
         message: "",
       });
     } catch (err: any) {
@@ -80,13 +80,15 @@ const ContactPage: React.FC = () => {
               </h1>
               <div className="h-[1px] w-12 bg-[#EAEAEA] mb-8"></div>
               <p className="text-xs text-gray-500 font-light leading-relaxed max-w-sm tracking-wide">
-                Experience uncompromising service. For inquiries regarding 24K Gold customized devices, product authentication, or global warranty assistance, our dedicated concierges are at your service.
+                Experience uncompromising service. For inquiries regarding bespoke MagSafe jewelry backpanels, private atelier commissions, or transit replacement assistance, our dedicated concierges are at your service.
               </p>
             </div>
             
             <div className="mt-16 lg:mt-24">
               <h3 className="text-[10px] uppercase tracking-widest text-gray-400 mb-4 font-light">Direct Contact</h3>
-              <p className="text-sm font-light text-black tracking-widest">oroxlabs@gmail.com</p>
+              <a href="mailto:hello@orox.in" className="text-sm font-light text-black tracking-widest hover:opacity-60 transition-opacity">
+                hello@orox.in
+              </a>
             </div>
           </div>
 

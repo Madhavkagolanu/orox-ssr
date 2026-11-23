@@ -1,48 +1,80 @@
 import { FC } from "react";
+import Link from "next/link";
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-white text-black border-t border-black">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pt-24 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-8 mb-24">
-
-          <div className="col-span-1 md:col-span-2">
-            <h3 className="text-[10px] uppercase tracking-[0.2em] font-semibold mb-2">About Orox</h3>
-            <p className="text-sm font-light leading-relaxed max-w-md text-gray-600">
-              OROX specializes in crafting exclusive 24K gold iPhones and premium accessories. We transform everyday technology into luxury masterpieces.
+    <footer className="bg-white text-black border-t border-black/10">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-16">
+          {/* Brand Introduction */}
+          <div className="col-span-1 md:col-span-2 pr-0 md:pr-12">
+            <h3 className="text-[10px] uppercase tracking-[0.25em] font-medium text-black mb-3">
+              OROX
+            </h3>
+            <p className="text-xs font-light leading-relaxed text-zinc-600 max-w-md">
+              OROX crafts detachable MagSafe luxury backpanels in gold-coated aerospace aluminum, fine gemstones, and hand-applied enamel. Each piece is made to order with a 30–60 day crafting period, delivered securely via internal white-glove open-box verification.
             </p>
           </div>
 
-          <div className="flex flex-col space-y-4 text-xs font-medium uppercase tracking-widest">
-            <h3 className="text-[10px] text-gray-400 mb-2">Services</h3>
-            <a href="/contact" className="hover:opacity-50 transition-opacity">Contact Us</a>
-            <a href="/my-orders" className="hover:opacity-50 transition-opacity">Track Order</a>
-            <a href="/cart" className="hover:opacity-50 transition-opacity">Shopping Bag</a>
-            <button onClick={() => window.open('https://google.com', '_blank')} className="text-left hover:opacity-50 transition-opacity">Check Authenticity</button>
-            <button onClick={() => window.open('https://google.com', '_blank')} className="text-left hover:opacity-50 transition-opacity">Warranty Info</button>
+          {/* Client Relations */}
+          <div className="flex flex-col space-y-3 text-[11px] font-light uppercase tracking-[0.18em]">
+            <h3 className="text-[10px] text-zinc-400 tracking-[0.25em] font-medium mb-1">
+              Client Service
+            </h3>
+            <Link href="/contact" className="text-zinc-800 hover:text-black transition-colors">
+              Contact Concierge
+            </Link>
+            <Link href="/my-orders" className="text-zinc-800 hover:text-black transition-colors">
+              Track Order
+            </Link>
+            <Link href="/cart" className="text-zinc-800 hover:text-black transition-colors">
+              Shopping Bag
+            </Link>
+            <Link href="/warranty" className="text-zinc-800 hover:text-black transition-colors">
+              Warranty & Care
+            </Link>
+            <Link href="/returns" className="text-zinc-800 hover:text-black transition-colors">
+              Handover & Replacements
+            </Link>
           </div>
 
-          <div className="flex flex-col space-y-4 text-xs font-medium uppercase tracking-widest">
-            <h3 className="text-[10px] text-gray-400 mb-2">Connect</h3>
-            <a href="mailto:oroxlabs@gmail.com" className="hover:opacity-50 transition-opacity">Email Concierge</a>
-            <a href="https://www.instagram.com/oroxofficial" target="_blank" rel="noopener noreferrer" className="hover:opacity-50 transition-opacity">Instagram</a>
-            <a href="https://youtube.com/@oroxofficial" target="_blank" rel="noopener noreferrer" className="hover:opacity-50 transition-opacity">YouTube</a>
+          {/* Connect */}
+          <div className="flex flex-col space-y-3 text-[11px] font-light uppercase tracking-[0.18em]">
+            <h3 className="text-[10px] text-zinc-400 tracking-[0.25em] font-medium mb-1">
+              Connect
+            </h3>
+            <a
+              href="mailto:hello@orox.in"
+              className="text-zinc-800 hover:text-black transition-colors"
+            >
+              hello@orox.in
+            </a>
+            <a
+              href="https://www.instagram.com/oroxofficial"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-800 hover:text-black transition-colors"
+            >
+              Instagram
+            </a>
+            {/* YouTube temporarily commented as requested */}
+            {/* <a href="https://youtube.com/@oroxofficial" target="_blank" rel="noopener noreferrer" className="text-zinc-800 hover:text-black transition-colors">YouTube</a> */}
           </div>
         </div>
 
-        <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-gray-500">
-          <div className="mb-4 md:mb-0">© {new Date().getFullYear()} Orox Laboratories</div>
+        {/* Legal Bar */}
+        <div className="border-t border-zinc-100 pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] text-zinc-400">
+          <div className="mb-4 sm:mb-0">
+            © {new Date().getFullYear()} OROX · CRAFTED IN INDIA
+          </div>
           <div className="flex space-x-8">
-            <a href="#" className="hover:text-black transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-black transition-colors">Terms of Service</a>
+            <Link href="/returns" className="hover:text-black transition-colors">
+              Handover & Replacements
+            </Link>
+            <Link href="/warranty" className="hover:text-black transition-colors">
+              Warranty & Care
+            </Link>
           </div>
-        </div>
-
-        {/* Massive Brand Typographic Element */}
-        <div className="mt-16 overflow-hidden flex justify-center">
-          <h1 className="text-[15vw] leading-none font-bold tracking-tighter text-black select-none">
-            OROX
-          </h1>
         </div>
       </div>
     </footer>
