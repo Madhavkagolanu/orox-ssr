@@ -12,9 +12,32 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "OROX - Premium Fashion & Lifestyle",
+  title: "OROX — Luxury Phone Editions",
   description:
-    "Discover curated fashion, jewellery, home decor and more at OROX. Authentic products delivered to your doorstep.",
+    "India's premier luxury house for handcrafted 24K gold and rose gold magnetic smartphone backplates, lab-grown diamonds, and precious gems. Limited bespoke editions.",
+  keywords: [
+    "OROX",
+    "luxury iPhone editions",
+    "gold iPhone backplate",
+    "caviar phone India",
+    "custom luxury mobile case",
+    "lab grown diamond smartphone",
+    "bespoke gold smartphone",
+  ],
+  metadataBase: new URL("https://orox.in"),
+  openGraph: {
+    title: "OROX — Luxury Phone Editions",
+    description:
+      "Handcrafted in 24K gold, rose gold, lab-grown diamonds, and precious gems. Limited bespoke editions with white-glove handover.",
+    url: "https://orox.in",
+    siteName: "OROX",
+    locale: "en_IN",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

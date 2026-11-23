@@ -12,7 +12,7 @@ const Footer: FC = () => {
               OROX
             </h3>
             <p className="text-xs font-light leading-relaxed text-zinc-600 max-w-md">
-              OROX crafts detachable MagSafe luxury backpanels in gold-coated aerospace aluminum, fine gemstones, and hand-applied enamel. Each piece is made to order with a 30–60 day crafting period, delivered securely via internal white-glove open-box verification.
+              OROX crafts magnetic luxury backplates in gold-coated aerospace aluminum, fine gemstones, and hand-applied enamel. Each piece is made to order with a 30–60 day crafting period, delivered securely via internal white-glove open-box verification.
             </p>
           </div>
 

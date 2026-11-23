@@ -20,6 +20,15 @@ export default function ReturnsPage() {
           <p className="text-xs text-zinc-500 font-light leading-relaxed tracking-wide">
             Due to the individual hand-crafting, gold coating, and limited allocations of OROX MagSafe jewelry backpanels, every piece is made to order with dedicated white-glove security.
           </p>
+
+          <div className="mt-8 p-5 bg-[#FAF8F5] border border-[#EAE3D9]">
+            <h3 className="text-[10px] uppercase tracking-[0.25em] font-medium text-black mb-1.5" style={{ color: '#93722B' }}>
+              Device Notice · Smartphone Not Included
+            </h3>
+            <p className="text-xs text-zinc-600 font-light leading-relaxed">
+              OROX exclusively manufactures and delivers detachable luxury MagSafe backpanels. The smartphone device depicted in our lookbooks and renders is for demonstration purposes only and is not included.
+            </p>
+          </div>
         </div>
 
         {/* Content Sections */}
@@ -29,7 +38,7 @@ export default function ReturnsPage() {
               01 / 30–60 Days Crafting Window
             </h2>
             <p className="text-xs text-zinc-600 font-light leading-relaxed">
-              All OROX pieces are produced individually upon order. From initial metal sculpt to gemstone pavé setting and multi-step enamel firing, each creation requires a 30 to 60 days crafting window before dispatch.
+              All OROX pieces are produced individually upon order. From initial metal sculpt to gemstone setting and multi-step enamel firing, each creation requires a 30 to 60 days crafting window before dispatch.
             </p>
           </div>
 

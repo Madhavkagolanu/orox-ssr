@@ -549,9 +549,12 @@ const CartPage: React.FC = () => {
             {/* Desktop Sidebar Summary */}
             <div className="hidden lg:block lg:w-96 xl:w-[400px]">
               <div className="bg-[#F9F9F9] border border-[#EAEAEA] p-8 sticky top-32">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.1em] text-black mb-6">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.1em] text-black mb-1">
                   Order Summary
                 </h3>
+                <span className="text-[9px] uppercase tracking-wider text-zinc-400 block mb-6">
+                  Magnetic Backplate Only · Phone Not Included
+                </span>
 
                 {availableItems.length === 0 && outOfStockItems.length > 0 ? (
                   <div className="text-center py-6">

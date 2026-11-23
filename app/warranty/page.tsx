@@ -20,6 +20,15 @@ export default function WarrantyPage() {
           <p className="text-xs text-zinc-500 font-light leading-relaxed tracking-wide">
             Each OROX backpanel is conceived as an interchangeable decorative jewelry piece and collectible objet d'art—sculpted from gold-coated aerospace aluminum, precious gems, and hand-applied enamel.
           </p>
+
+          <div className="mt-8 p-5 bg-[#FAF8F5] border border-[#EAE3D9]">
+            <h3 className="text-[10px] uppercase tracking-[0.25em] font-medium text-black mb-1.5" style={{ color: '#93722B' }}>
+              Device Notice · Smartphone Not Included
+            </h3>
+            <p className="text-xs text-zinc-600 font-light leading-relaxed">
+              OROX exclusively manufactures and delivers detachable luxury MagSafe backpanels. The smartphone device depicted in our lookbooks and renders is for demonstration purposes only and is not included.
+            </p>
+          </div>
         </div>
 
         {/* Content Sections */}

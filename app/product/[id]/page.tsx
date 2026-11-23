@@ -306,6 +306,9 @@ export default function ProductPage() {
                       ₹{effectivePrice.toLocaleString()}
                     </span>
                   )}
+                  <span className="text-[9px] text-zinc-400 uppercase tracking-widest mt-1 block">
+                    Magnetic Backplate Only · Phone Not Included
+                  </span>
                 </div>
 
                 <div className="w-[160px]">
@@ -543,6 +546,9 @@ export default function ProductPage() {
                         ₹{effectivePrice.toLocaleString()}
                       </span>
                     )}
+                    <span className="text-[10px] text-zinc-400 uppercase tracking-widest mt-1 block">
+                      Magnetic Backplate Only · Phone Not Included
+                    </span>
                   </div>
 
                   <div className="w-[180px] h-12">

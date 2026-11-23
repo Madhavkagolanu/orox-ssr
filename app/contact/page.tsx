@@ -80,7 +80,7 @@ const ContactPage: React.FC = () => {
               </h1>
               <div className="h-[1px] w-12 bg-[#EAEAEA] mb-8"></div>
               <p className="text-xs text-gray-500 font-light leading-relaxed max-w-sm tracking-wide">
-                Experience uncompromising service. For inquiries regarding bespoke MagSafe jewelry backpanels, private atelier commissions, or transit replacement assistance, our dedicated concierges are at your service.
+                Experience uncompromising service. For inquiries regarding bespoke magnetic luxury backplates, private bespoke commissions, or transit replacement assistance, our dedicated concierges are at your service.
               </p>
             </div>
             
