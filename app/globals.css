@@ -1,26 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
+@import "../styles/swiper.css";
 
+/* ─────────────────────────────────────────────
+   OROX — Pure Black & White System
+   ───────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --orox-white:  #FFFFFF;
+  --orox-black:  #000000;
+  --orox-ink:    #0A0A0A;
+  --orox-gray1:  #111111;
+  --orox-gray2:  #333333;
+  --orox-gray3:  #555555;
+  --orox-gray4:  #888888;
+  --orox-gray5:  #BBBBBB;
+  --orox-gray6:  #E0E0E0;
+  --orox-gray7:  #F2F2F2;
+
+  --background: var(--orox-white);
+  --foreground: var(--orox-ink);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans:  "Inter", var(--font-inter), sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ── Base ─────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--orox-white);
+  color: var(--orox-ink);
+  font-family: "Inter", var(--font-inter), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Shimmer for skeletons ────────────────── */
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Scrollbar hide ───────────────────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

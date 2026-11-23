@@ -1,0 +1,18 @@
+/* Make swiper dots appear below image */
+.swiper-pagination {
+    position: relative !important;
+    margin-top: 12px;
+  }
+  
+  /* Dots styling */
+  .swiper-pagination-bullet {
+    background-color: #d1d5db !important; /* Tailwind gray-300 */
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #4b5563 !important; /* Tailwind gray-700 */
+  }
+  
